@@ -91,7 +91,7 @@ export default function ContactPage() {
                     <CardTitle>Dirección</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription>Calle Principal 123, Ciudad, CP 12345</CardDescription>
+                    <CardDescription>Av. los chásquis, Ambato 180207</CardDescription>
                   </CardContent>
                 </Card>
                 <Card className="border-sage/40">
@@ -100,7 +100,7 @@ export default function ContactPage() {
                     <CardTitle>Teléfono</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription>+1 (555) 123-4567</CardDescription>
+                    <CardDescription>033700090</CardDescription>
                   </CardContent>
                 </Card>
                 <Card className="border-sage/40">
@@ -109,7 +109,7 @@ export default function ContactPage() {
                     <CardTitle>Correo Electrónico</CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <CardDescription>info@companyname.com</CardDescription>
+                    <CardDescription>info@codecrafters.com</CardDescription>
                   </CardContent>
                 </Card>
               </div>
@@ -217,7 +217,7 @@ export default function ContactPage() {
           <div className="mt-8 aspect-video w-full overflow-hidden rounded-lg border border-sage/40 bg-muted">
             {/* Replace with an actual map component in a real application */}
             <div className="flex h-full items-center justify-center">
-              <p className="text-muted-foreground">Mapa de ubicación</p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15955.356792356466!2d-78.64441565249864!3d-1.2693705341804944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d38225e088295f%3A0xb16c26da66e6e4b3!2sUniversidad%20T%C3%A9cnica%20de%20Ambato!5e0!3m2!1ses-419!2sec!4v1742391980521!5m2!1ses-419!2sec" width="800" height="600" style={{ border: 0 }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
           </div>
         </div>
