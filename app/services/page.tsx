@@ -38,6 +38,10 @@ export default function ServicesPage() {
                   su marca y atraen a su público objetivo. Utilizamos tecnologías de vanguardia como React, Next.js y 
                   WordPress para garantizar rendimiento y escalabilidad.
                 </CardDescription>
+                <div className="mt-4 space-y-2">
+                  <p className="text-sm text-fern-green font-medium">Tecnologías:</p>
+                  <p className="text-xs text-muted-foreground">React, Next.js, WordPress, Tailwind CSS</p>
+                </div>
                 <Link href="/contact" className="mt-4 inline-flex items-center text-sm font-medium text-fern-green">
                   Saber más
                   <ArrowRight className="ml-1 h-4 w-4" />
