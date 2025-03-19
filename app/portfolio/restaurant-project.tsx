@@ -26,7 +26,7 @@ const RestaurantProject = () => {
       <Card className="overflow-hidden border-sage/40">
         <div className="relative aspect-video overflow-hidden">
           <Image
-            src="/placeholder.svg?height=450&width=800"
+            src="/images/Restaurant/restaurant3.png"
             width={800}
             height={450}
             alt="Project 2"

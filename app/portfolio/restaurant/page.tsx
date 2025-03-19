@@ -15,7 +15,6 @@ import {
 const RestaurantDetailPage = () => {
   const router = useRouter();
 
-  // Lista de características del sistema con sus descripciones e imágenes
   const features = [
     {
       title: "Gestión de Pedidos",
