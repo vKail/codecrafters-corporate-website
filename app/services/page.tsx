@@ -344,70 +344,6 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* FAQ Section - New */}
-      <section className="w-full py-12 md:py-24 lg:py-32">
-        <div className="container px-4 md:px-6">
-          <div className="flex flex-col items-center justify-center space-y-4 text-center mb-12">
-            <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter text-brunswick-green sm:text-4xl md:text-5xl">
-                Preguntas Frecuentes
-              </h2>
-              <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Respuestas a las dudas más comunes sobre nuestros servicios.
-              </p>
-            </div>
-          </div>
-          <div className="grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
-            <Card className="border-sage/40">
-              <CardHeader>
-                <CardTitle className="text-lg">¿Cuál es el tiempo de entrega promedio de un proyecto?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription>
-                  El tiempo varía según la complejidad del proyecto. Un sitio web típico puede tomar de 4 a 8 semanas, 
-                  mientras que aplicaciones más complejas pueden requerir de 3 a 6 meses. Proporcionamos un cronograma 
-                  detallado al inicio de cada proyecto.
-                </CardDescription>
-              </CardContent>
-            </Card>
-            <Card className="border-sage/40">
-              <CardHeader>
-                <CardTitle className="text-lg">¿Cómo gestionan la seguridad de los datos?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription>
-                  Implementamos prácticas de seguridad de primera clase, incluyendo cifrado de datos, pruebas de 
-                  penetración regulares y cumplimiento de normativas como GDPR. Todos nuestros servicios están 
-                  diseñados con la seguridad como prioridad.
-                </CardDescription>
-              </CardContent>
-            </Card>
-            <Card className="border-sage/40">
-              <CardHeader>
-                <CardTitle className="text-lg">¿Ofrecen soporte técnico después de la implementación?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription>
-                  Sí, ofrecemos planes de mantenimiento y soporte adaptados a las necesidades de cada cliente. 
-                  Estos incluyen actualizaciones, corrección de errores, mejoras y asistencia técnica continua.
-                </CardDescription>
-              </CardContent>
-            </Card>
-            <Card className="border-sage/40">
-              <CardHeader>
-                <CardTitle className="text-lg">¿Cómo calculan el costo de sus servicios?</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <CardDescription>
-                  Nuestros precios se basan en la complejidad del proyecto, los recursos necesarios y el tiempo 
-                  estimado de desarrollo. Ofrecemos presupuestos transparentes y flexibles que se adaptan a diferentes 
-                  necesidades y presupuestos.
-                </CardDescription>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section - Enhanced */}
       <section className="w-full bg-gradient-to-r from-brunswick-green to-fern-green text-timberwolf py-12 md:py-24 lg:py-32">
@@ -430,7 +366,7 @@ export default function ServicesPage() {
                 </Button>
               </Link>
               <Link href="/portfolio">
-                <Button size="lg" variant="outline" className="border-sage text-timberwolf hover:bg-hunter-green/20">
+                <Button variant="outline" size="lg" className="border-fern-green text-fern-green hover:bg-timberwolf">
                   Ver proyectos
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
