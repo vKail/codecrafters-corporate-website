@@ -1,7 +1,7 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { ArrowRight, Award, Clock, Target, Users } from "lucide-react"
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { ArrowRight, Award, Clock, Target, Users } from "lucide-react";
 
 export default function AboutPage() {
   return (
@@ -10,17 +10,31 @@ export default function AboutPage() {
       <section className="w-full py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
-            <div className="flex flex-col justify-center space-y-4">
-              <div className="space-y-2">
-                <h1 className="gradient-heading text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+            <div className="flex flex-col items-center justify-center space-y-6">
+              <div className="space-y-3 max-w-[700px] mx-auto">
+                <h1 className="gradient-heading text-3xl font-bold tracking-tighter text-center sm:text-4xl md:text-5xl lg:text-6xl">
                   Sobre Nosotros
                 </h1>
-                <p className="max-w-[600px] text-muted-foreground md:text-xl">
-                  Somos una empresa comprometida con la excelencia y la innovación, dedicada a proporcionar soluciones
-                  de alta calidad a nuestros clientes.
+                <p className="text-muted-foreground md:text-xl text-justify">
+                  En <strong>Codecrafters</strong>, combinamos{" "}
+                  <strong>tecnología</strong> e<strong> innovación</strong> para
+                  crear soluciones digitales de alto impacto. Nuestro equipo de
+                  expertos desarrolla{" "}
+                  <strong>aplicaciones web y móviles</strong>, implementa{" "}
+                  <strong>ciberseguridad</strong> y optimiza el
+                  <strong> análisis de datos</strong>, siempre con un enfoque en
+                  <strong> calidad, eficiencia y escalabilidad</strong>.
+                </p>
+                <p className="text-muted-foreground md:text-xl text-justify">
+                  Nos caracteriza la <strong>excelencia</strong>, el{" "}
+                  <strong>trabajo en equipo</strong>y la búsqueda constante de
+                  mejoras. Personalizamos cada solución para adaptarnos a las
+                  <strong> necesidades de nuestros clientes</strong>, asegurando
+                  un impacto real en su negocio.
                 </p>
               </div>
             </div>
+
             <div className="flex items-center justify-center">
               <Image
                 src="/placeholder.svg?height=550&width=550"
@@ -47,22 +61,41 @@ export default function AboutPage() {
                 className="rounded-lg object-cover"
               />
             </div>
-            <div className="flex flex-col justify-center space-y-4">
-              <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter text-brunswick-green sm:text-4xl md:text-5xl">
+
+            <div className="flex flex-col items-center justify-center space-y-6">
+              <div className="space-y-3 max-w-[700px] mx-auto">
+                <h2 className="text-3xl font-bold tracking-tighter text-brunswick-green sm:text-4xl md:text-5xl text-center">
                   Nuestra Historia
                 </h2>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Fundada en 2010, nuestra empresa comenzó con una visión clara: proporcionar soluciones innovadoras que
-                  ayuden a las empresas a prosperar en un mundo digital en constante evolución.
+                <p className="text-muted-foreground md:text-xl lg:text-lg xl:text-xl text-justify">
+                  <strong>Codecrafters</strong> nació del entusiasmo de un grupo
+                  de estudiantes apasionados por la <strong>tecnología</strong>{" "}
+                  y la <strong>innovación</strong>. Con el deseo de transformar
+                  ideas en soluciones digitales
+                  <strong> escalables</strong> y <strong>eficientes</strong>, nos
+                  embarcamos en el desafío de crear{" "}
+                  <strong>software de calidad</strong> para empresas y
+                  emprendedores.
                 </p>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  A lo largo de los años, hemos crecido y evolucionado, pero nuestro compromiso con la excelencia y la
-                  satisfacción del cliente sigue siendo el núcleo de todo lo que hacemos.
+                <p className="text-muted-foreground md:text-xl lg:text-lg xl:text-xl text-justify">
+                  Lo que comenzó como un <strong>proyecto universitario</strong>
+                   pronto se convirtió en un equipo multidisciplinario que ofrece
+                  <strong> desarrollo web</strong>,
+                  <strong> aplicaciones móviles</strong>,
+                  <strong> software a medida</strong>,
+                  <strong> análisis de datos</strong> y
+                  <strong> ciberseguridad</strong>. Nos impulsan la
+                  <strong> creatividad</strong>, la <strong>excelencia</strong> y
+                  el compromiso con la
+                  <strong> transformación digital</strong> de nuestros clientes.
                 </p>
-                <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Hoy, somos un equipo diverso de profesionales apasionados, dedicados a ofrecer soluciones
-                  personalizadas que impulsan el éxito de nuestros clientes.
+                <p className="text-muted-foreground md:text-xl lg:text-lg xl:text-xl text-justify">
+                  Hoy, seguimos evolucionando con las{" "}
+                  <strong>últimas tecnologías</strong> y
+                  <strong> metodologías ágiles</strong>, con el objetivo de{" "}
+                  <strong>crear experiencias digitales impactantes</strong> y
+                  ayudar a nuestros clientes a alcanzar su{" "}
+                  <strong>máximo potencial</strong> en la era digital.
                 </p>
               </div>
             </div>
@@ -79,7 +112,8 @@ export default function AboutPage() {
                 Nuestros Valores
               </h2>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Los principios que guían nuestro trabajo y nuestras relaciones con los clientes.
+                Los principios que guían nuestro trabajo y nuestras relaciones
+                con los clientes.
               </p>
             </div>
           </div>
@@ -88,29 +122,32 @@ export default function AboutPage() {
               <Users className="h-12 w-12 text-hunter-green" />
               <h3 className="text-xl font-bold">Colaboración</h3>
               <p className="text-muted-foreground">
-                Trabajamos estrechamente con nuestros clientes para entender sus necesidades y ofrecer soluciones
-                personalizadas.
+                Trabajamos estrechamente con nuestros clientes para entender sus
+                necesidades y ofrecer soluciones personalizadas.
               </p>
             </div>
             <div className="flex flex-col items-center space-y-2 text-center">
               <Award className="h-12 w-12 text-fern-green" />
               <h3 className="text-xl font-bold">Excelencia</h3>
               <p className="text-muted-foreground">
-                Nos esforzamos por alcanzar los más altos estándares en todo lo que hacemos.
+                Nos esforzamos por alcanzar los más altos estándares en todo lo
+                que hacemos.
               </p>
             </div>
             <div className="flex flex-col items-center space-y-2 text-center">
               <Target className="h-12 w-12 text-sage" />
               <h3 className="text-xl font-bold">Innovación</h3>
               <p className="text-muted-foreground">
-                Constantemente buscamos nuevas formas de mejorar y ofrecer soluciones más efectivas.
+                Constantemente buscamos nuevas formas de mejorar y ofrecer
+                soluciones más efectivas.
               </p>
             </div>
             <div className="flex flex-col items-center space-y-2 text-center">
               <Clock className="h-12 w-12 text-brunswick-green" />
               <h3 className="text-xl font-bold">Compromiso</h3>
               <p className="text-muted-foreground">
-                Nos comprometemos a cumplir con los plazos y a superar las expectativas de nuestros clientes.
+                Nos comprometemos a cumplir con los plazos y a superar las
+                expectativas de nuestros clientes.
               </p>
             </div>
           </div>
@@ -123,21 +160,30 @@ export default function AboutPage() {
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter text-brunswick-green sm:text-4xl">Nuestra Misión</h2>
+                <h2 className="text-3xl font-bold tracking-tighter text-brunswick-green sm:text-4xl">
+                  Nuestra Misión
+                </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Proporcionar soluciones innovadoras y de alta calidad que ayuden a nuestros clientes a alcanzar sus
-                  objetivos empresariales, mientras fomentamos un ambiente de trabajo colaborativo y de crecimiento para
-                  nuestro equipo.
+                  Nuestra misión es empoderar a empresas y emprendedores con
+                  soluciones tecnológicas innovadoras, optimizadas y seguras.
+                  Buscamos simplificar procesos, mejorar la eficiencia y crear
+                  experiencias digitales impactantes a través de software de
+                  alta calidad.
                 </p>
               </div>
             </div>
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter text-brunswick-green sm:text-4xl">Nuestra Visión</h2>
+                <h2 className="text-3xl font-bold tracking-tighter text-brunswick-green sm:text-4xl">
+                  Nuestra Visión
+                </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Ser reconocidos como líderes en nuestro sector, conocidos por nuestra excelencia, innovación y
-                  compromiso con el éxito de nuestros clientes, contribuyendo positivamente a la sociedad y al medio
-                  ambiente.
+                  Ser una empresa líder en el desarrollo de software y
+                  soluciones digitales, reconocida por nuestra capacidad de
+                  innovación, calidad y compromiso con la satisfacción del
+                  cliente. Aspiramos a expandir nuestro impacto globalmente,
+                  impulsando la evolución tecnológica y siendo un referente en
+                  el sector de la transformación digital.
                 </p>
               </div>
             </div>
@@ -154,18 +200,26 @@ export default function AboutPage() {
                 ¿Quiere conocer más sobre nosotros?
               </h2>
               <p className="max-w-[900px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Contáctenos hoy mismo para programar una reunión o visitar nuestras oficinas.
+                Contáctenos hoy mismo para programar una reunión o visitar
+                nuestras oficinas.
               </p>
             </div>
             <div className="flex flex-col gap-2 min-[400px]:flex-row">
               <Link href="/contact">
-                <Button size="lg" className="bg-hunter-green text-timberwolf hover:bg-hunter-green/90">
+                <Button
+                  size="lg"
+                  className="bg-hunter-green text-timberwolf hover:bg-hunter-green/90"
+                >
                   Contáctenos
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Button>
               </Link>
               <Link href="/team">
-                <Button variant="outline" size="lg" className="border-fern-green text-fern-green hover:bg-timberwolf">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="border-fern-green text-fern-green hover:bg-timberwolf"
+                >
                   Conozca a nuestro equipo
                 </Button>
               </Link>
@@ -174,6 +228,5 @@ export default function AboutPage() {
         </div>
       </section>
     </div>
-  )
+  );
 }
-
