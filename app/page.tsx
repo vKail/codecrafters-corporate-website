@@ -13,7 +13,7 @@ export default function Home() {
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12 xl:grid-cols-2">
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
-                <h1 className="gradient-heading text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none">
+                <h1 className="gradient-heading text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none ">
                   Soluciones innovadoras para su negocio
                 </h1>
                 <p className="max-w-[600px] text-muted-foreground md:text-xl">
@@ -37,11 +37,11 @@ export default function Home() {
             </div>
             <div className="flex items-center justify-center">
               <Image
-                src="/placeholder.svg?height=550&width=550"
-                width={550}
-                height={550}
+                src="images/home.webp"
+                width={650}
+                height={650}
                 alt="Hero Image"
-                className="rounded-lg object-cover"
+                className="rounded-lg object-contain"
               />
             </div>
           </div>
@@ -65,12 +65,11 @@ export default function Home() {
             <Card className="border-sage/40">
               <CardHeader className="flex flex-row items-center gap-4 pb-2">
                 <Zap className="h-8 w-8 text-fern-green" />
-                <CardTitle className="text-xl">Desarrollo Web</CardTitle>
+                <CardTitle className="text-xl">Desarrollo de Software</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Creamos sitios web modernos, responsivos y optimizados para buscadores que representan perfectamente
-                  su marca.
+                  Soluciones personalizadas para satisfacer sus necesidades de desarrollo de software.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -88,11 +87,12 @@ export default function Home() {
             <Card className="border-sage/40">
               <CardHeader className="flex flex-row items-center gap-4 pb-2">
                 <Shield className="h-8 w-8 text-hunter-green" />
-                <CardTitle className="text-xl">Ciberseguridad</CardTitle>
+                <CardTitle className="text-xl">Hosting</CardTitle>
               </CardHeader>
               <CardContent>
                 <CardDescription>
-                  Proteja su negocio con nuestras soluciones de seguridad informática de vanguardia.
+                  Alojamiento web seguro y confiable con soporte técnico 24/7 para garantizar la disponibilidad de su
+                  sitio.
                 </CardDescription>
               </CardContent>
             </Card>
@@ -114,11 +114,11 @@ export default function Home() {
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
             <div className="flex items-center justify-center">
               <Image
-                src="/placeholder.svg?height=550&width=550"
-                width={550}
-                height={550}
+                src="/images/home2.jpg"
+                width={750}
+                height={750}
                 alt="Why Choose Us"
-                className="rounded-lg object-cover"
+                className="rounded-lg object-contain"
               />
             </div>
             <div className="flex flex-col justify-center space-y-4">
@@ -136,7 +136,7 @@ export default function Home() {
                   <div>
                     <h3 className="font-bold">Experiencia comprobada</h3>
                     <p className="text-muted-foreground">
-                      Más de 10 años de experiencia en el sector, con cientos de proyectos exitosos.
+                      Más de 3 años de experiencia en el sector, con cientos de proyectos exitosos.
                     </p>
                   </div>
                 </div>
@@ -182,7 +182,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      <section className="w-full bg-gradient-to-r from-brunswick-green to-fern-green text-timberwolf py-12 md:py-24 lg:py-32">
+      <section className="w-full bg-timberwolf/50  text-brunswick-green  py-12 md:py-24 lg:py-32">
         <div className="container px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">

@@ -5,16 +5,20 @@ import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { Menu, X } from "lucide-react"
 import { ModeToggle } from "./mode-toggle"
+import { routes } from "@/data/routes"
+import { usePathname } from "next/navigation"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+
+  const pathname = usePathname()
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen)
   }
 
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-sage/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
+    <header className="sticky top-0 z-50 w-full border-b border-sage/40 backdrop-blur supports-[backdrop-filter]:bg-timberwolf/50 bg-timberwolf/50">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <span className="text-xl font-bold text-brunswick-green">CodeCrafters</span>
@@ -22,31 +26,19 @@ export default function Header() {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex md:items-center md:space-x-4 lg:space-x-6">
-          <Link href="/" className="text-sm font-medium transition-colors hover:text-fern-green">
-            Inicio
-          </Link>
-          <Link href="/about" className="text-sm font-medium transition-colors hover:text-fern-green">
-            Nosotros
-          </Link>
-          <Link href="/services" className="text-sm font-medium transition-colors hover:text-fern-green">
-            Servicios
-          </Link>
-          <Link href="/portfolio" className="text-sm font-medium transition-colors hover:text-fern-green">
-            Portafolio
-          </Link>
-          <Link href="/blog" className="text-sm font-medium transition-colors hover:text-fern-green">
-            Blog
-          </Link>
-          <Link href="/team" className="text-sm font-medium transition-colors hover:text-fern-green">
-            Equipo
-          </Link>
-          <Link href="/contact" className="text-sm font-medium transition-colors hover:text-fern-green">
-            Contacto
-          </Link>
+          {
+            routes.map((route, index) => (
+              <Link key={index} href
+              ={route.href} className={`font-medium transition-colors hover:text-fern-green ${pathname === route.href ? 'text-fern-gree font-semibold text-xl' : 'text-muted-foreground'}`}>
+                {route.label}
+              </Link>
+            ))
+          }
+
         </nav>
 
         <div className="flex items-center space-x-4">
-          <ModeToggle />
+          {/* <ModeToggle /> */}
           <Button variant="ghost" size="icon" className="md:hidden" onClick={toggleMenu}>
             {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </Button>
@@ -57,51 +49,17 @@ export default function Header() {
       {isMenuOpen && (
         <div className="container md:hidden">
           <nav className="flex flex-col space-y-4 pb-6">
-            <Link href="/" className="text-sm font-medium transition-colors hover:text-fern-green" onClick={toggleMenu}>
-              Inicio
-            </Link>
-            <Link
-              href="/about"
-              className="text-sm font-medium transition-colors hover:text-fern-green"
-              onClick={toggleMenu}
-            >
-              Nosotros
-            </Link>
-            <Link
-              href="/services"
-              className="text-sm font-medium transition-colors hover:text-fern-green"
-              onClick={toggleMenu}
-            >
-              Servicios
-            </Link>
-            <Link
-              href="/portfolio"
-              className="text-sm font-medium transition-colors hover:text-fern-green"
-              onClick={toggleMenu}
-            >
-              Portafolio
-            </Link>
-            <Link
-              href="/blog"
-              className="text-sm font-medium transition-colors hover:text-fern-green"
-              onClick={toggleMenu}
-            >
-              Blog
-            </Link>
-            <Link
-              href="/team"
-              className="text-sm font-medium transition-colors hover:text-fern-green"
-              onClick={toggleMenu}
-            >
-              Equipo
-            </Link>
-            <Link
-              href="/contact"
-              className="text-sm font-medium transition-colors hover:text-fern-green"
-              onClick={toggleMenu}
-            >
-              Contacto
-            </Link>
+            {
+              routes.map((route, index) => (
+                <Link key={index} href={route.href} className={`text-sm font-medium transition-colors hover:text-fern-green 
+                  ${ 
+                    pathname === route.href ? 'text-fern-gree font-semibold text-xl' : 'text-muted-foreground'
+                  }`} onClick={toggleMenu}>
+                  {route.label}
+                </Link>
+              ))
+            }
+            
           </nav>
         </div>
       )}
