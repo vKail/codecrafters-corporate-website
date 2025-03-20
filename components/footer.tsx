@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <h3 className="mb-4 text-lg font-semibold text-sage">CodeCrafters</h3>
-            <p className="text-sm text-timberwolf/80">Ofreciendo soluciones innovadoras para su negocio desde 2010.</p>
+            <p className="text-sm text-timberwolf/80">Ofreciendo soluciones innovadoras para su negocio desde 2022.</p>
           </div>
           <div>
             <h3 className="mb-4 text-lg font-semibold text-sage">Enlaces</h3>
@@ -58,10 +58,10 @@ export default function Footer() {
           <div>
             <h3 className="mb-4 text-lg font-semibold text-sage">Contacto</h3>
             <address className="not-italic text-sm text-timberwolf/80">
-              <p>Calle Principal 123</p>
-              <p>Ciudad, CP 12345</p>
-              <p className="mt-2">info@companyname.com</p>
-              <p>+1 (555) 123-4567</p>
+              <p>Los Chasquis y Rio Payamino</p>
+              <p>Ambato, Ecuador</p>
+              <p className="mt-2">info@codecrafters.com</p>
+              <p>+593 967229875</p>
             </address>
             <div className="mt-4 flex space-x-4">
               <Link href="#" className="text-timberwolf/80 hover:text-timberwolf">
