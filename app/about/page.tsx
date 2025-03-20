@@ -37,8 +37,8 @@ export default function AboutPage() {
 
             <div className="flex items-center justify-center">
               <Image
-                src="/placeholder.svg?height=550&width=550"
-                width={550}
+                src="images/about/CCI-tagline_logo-1.png"
+                width={500}
                 height={550}
                 alt="About Us"
                 className="rounded-lg object-cover"
@@ -54,7 +54,7 @@ export default function AboutPage() {
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
             <div className="flex items-center justify-center">
               <Image
-                src="/placeholder.svg?height=550&width=550"
+                src="images/about/image_h.png"
                 width={550}
                 height={550}
                 alt="Our Story"
