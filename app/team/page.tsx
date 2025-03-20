@@ -44,7 +44,7 @@ export default function TeamPage() {
       name: "Josue Moreira",
       position: "Desarrollador de Software",
       bio: "Estudiante de ingenieria en software con conocimiento en el área de la seguridad informática.",
-      image: "/placeholder.svg?height=400&width=400",
+      image: "https://avatars.githubusercontent.com/u/139159439?v=4",
       social: {
         linkedin: "#",
         github: "https://github.com/JMSebas",
@@ -66,7 +66,7 @@ export default function TeamPage() {
       name: "Adrián Jurado",
       position: "Desarrollador de Software",
       bio: "Estudiante de Ingeniería en Software, con experiencia en desarrollo de aplicaciones web y móviles.",
-      image: "/placeholder.svg?height=400&width=400",
+      image: "https://avatars.githubusercontent.com/u/100721523?v=4",
       social: {
         linkedin: "https://www.linkedin.com/in/adrian-jurado-510613352/",
         github: "https://github.com/vKail",
@@ -143,7 +143,7 @@ export default function TeamPage() {
           <div className="grid gap-6 lg:grid-cols-2 lg:gap-12">
             <div className="flex items-center justify-center">
               <Image
-                src="/placeholder.svg?height=550&width=550"
+                src="/images/logo-team.png"
                 width={550}
                 height={550}
                 alt="Join Our Team"
