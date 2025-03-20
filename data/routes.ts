@@ -16,10 +16,6 @@ export const routes = [
     href: '/portfolio'
   },
   {
-    label: 'Blog',
-    href: '/blog'
-  },
-  {
     label: 'Equipo',
     href: '/team'
   },
