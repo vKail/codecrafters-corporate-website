@@ -35,13 +35,13 @@ export default function LucidChartBlog() {
   
         <section className="w-full mb-8">
   <h2 className="text-2xl font-bold text-brunswick-green mb-4">
-    Video Tutorial: Primeros Pasos
+    Video Tutorial: LucidChart
   </h2>
   <div className="w-full overflow-hidden rounded-xl border border-timberwolf/50 shadow-md">
     <div className="aspect-video relative w-full h-full">
       <iframe
         className="absolute top-0 left-0 w-full h-full rounded-xl"
-        src="https://www.youtube.com/embed/8VqlzBxjGJw"
+        src="https://www.youtube.com/embed/zimyeA-eZUo"
         title="Video Tutorial de Lucidchart"
         frameBorder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
