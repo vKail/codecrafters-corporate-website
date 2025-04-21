@@ -20,6 +20,10 @@ export const routes = [
     href: '/team'
   },
   {
+    label: 'Blog',
+    href: '/blog'
+  },
+  {
     label: 'Contacto',
     href: '/contact'
   }

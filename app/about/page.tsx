@@ -16,22 +16,19 @@ export default function AboutPage() {
                   Sobre Nosotros
                 </h1>
                 <p className="text-muted-foreground md:text-xl text-justify">
-                  En <strong>Codecrafters</strong>, combinamos{" "}
-                  <strong>tecnología</strong> e<strong> innovación</strong> para
-                  crear soluciones digitales de alto impacto. Nuestro equipo de
-                  expertos desarrolla{" "}
-                  <strong>aplicaciones web y móviles</strong>, implementa{" "}
-                  <strong>ciberseguridad</strong> y optimiza el
-                  <strong> análisis de datos</strong>, siempre con un enfoque en
-                  <strong> calidad, eficiencia y escalabilidad</strong>.
+                   En <strong>Codecrafters</strong>, fusionamos 
+                    <strong> tecnología</strong> e <strong>innovación
+                      </strong> para ofrecer soluciones digitales de alto impacto. Creamos 
+                      <strong> aplicaciones web y móviles</strong>, optimizamos el 
+                      <strong> análisis de datos</strong> y garantizamos 
+                       <strong> calidad, eficiencia y escalabilidad</strong>.
                 </p>
                 <p className="text-muted-foreground md:text-xl text-justify">
-                  Nos caracteriza la <strong>excelencia</strong>, el{" "}
-                  <strong>trabajo en equipo</strong>y la búsqueda constante de
-                  mejoras. Personalizamos cada solución para adaptarnos a las
-                  <strong> necesidades de nuestros clientes</strong>, asegurando
-                  un impacto real en su negocio.
+                  Nos distingue la <strong> excelencia</strong> y el <strong> trabajo en equipo</strong>,
+                  adaptándonos siempre a las <strong> necesidades de nuestros clientes
+                    </strong> para generar un impacto positivo en su negocio.
                 </p>
+
               </div>
             </div>
 
@@ -68,35 +65,15 @@ export default function AboutPage() {
                   Nuestra Historia
                 </h2>
                 <p className="text-muted-foreground md:text-xl lg:text-lg xl:text-xl text-justify">
-                  <strong>Codecrafters</strong> nació del entusiasmo de un grupo
-                  de estudiantes apasionados por la <strong>tecnología</strong>{" "}
-                  y la <strong>innovación</strong>. Con el deseo de transformar
-                  ideas en soluciones digitales
-                  <strong> escalables</strong> y <strong>eficientes</strong>, nos
-                  embarcamos en el desafío de crear{" "}
-                  <strong>software de calidad</strong> para empresas y
-                  emprendedores.
-                </p>
-                <p className="text-muted-foreground md:text-xl lg:text-lg xl:text-xl text-justify">
-                  Lo que comenzó como un <strong>proyecto universitario</strong>
-                   pronto se convirtió en un equipo multidisciplinario que ofrece
-                  <strong> desarrollo web</strong>,
-                  <strong> aplicaciones móviles</strong>,
-                  <strong> software a medida</strong>,
-                  <strong> análisis de datos</strong> y
-                  <strong> ciberseguridad</strong>. Nos impulsan la
-                  <strong> creatividad</strong>, la <strong>excelencia</strong> y
-                  el compromiso con la
-                  <strong> transformación digital</strong> de nuestros clientes.
-                </p>
-                <p className="text-muted-foreground md:text-xl lg:text-lg xl:text-xl text-justify">
-                  Hoy, seguimos evolucionando con las{" "}
-                  <strong>últimas tecnologías</strong> y
-                  <strong> metodologías ágiles</strong>, con el objetivo de{" "}
-                  <strong>crear experiencias digitales impactantes</strong> y
-                  ayudar a nuestros clientes a alcanzar su{" "}
-                  <strong>máximo potencial</strong> en la era digital.
-                </p>
+  <strong>Codecrafters</strong> nació de un grupo de estudiantes apasionados por la <strong>tecnología</strong> y la <strong>innovación</strong>, con el objetivo de crear soluciones digitales <strong>escalables</strong> y <strong>eficientes</strong> para empresas y emprendedores.
+</p>
+<p className="text-muted-foreground md:text-xl lg:text-lg xl:text-xl text-justify">
+  Lo que empezó como un <strong>proyecto universitario</strong> se transformó en un equipo multidisciplinario que ofrece <strong>desarrollo web</strong>, <strong>aplicaciones móviles</strong>, <strong>software a medida</strong>, <strong>análisis de datos</strong> y <strong>ciberseguridad</strong>.
+</p>
+<p className="text-muted-foreground md:text-xl lg:text-lg xl:text-xl text-justify">
+  Hoy seguimos evolucionando con las <strong>últimas tecnologías</strong> y <strong>metodologías ágiles</strong>, buscando <strong>crear experiencias digitales impactantes</strong> y ayudar a nuestros clientes a alcanzar su <strong>máximo potencial</strong>.
+</p>
+
               </div>
             </div>
           </div>
@@ -164,12 +141,9 @@ export default function AboutPage() {
                   Nuestra Misión
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Nuestra misión es empoderar a empresas y emprendedores con
-                  soluciones tecnológicas innovadoras, optimizadas y seguras.
-                  Buscamos simplificar procesos, mejorar la eficiencia y crear
-                  experiencias digitales impactantes a través de software de
-                  alta calidad.
-                </p>
+  Nuestra misión es empoderar a empresas y emprendedores con soluciones tecnológicas innovadoras, optimizadas y seguras, mejorando la eficiencia y creando experiencias digitales impactantes con software de alta calidad.
+</p>
+
               </div>
             </div>
             <div className="flex flex-col justify-center space-y-4">
@@ -178,13 +152,9 @@ export default function AboutPage() {
                   Nuestra Visión
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Ser una empresa líder en el desarrollo de software y
-                  soluciones digitales, reconocida por nuestra capacidad de
-                  innovación, calidad y compromiso con la satisfacción del
-                  cliente. Aspiramos a expandir nuestro impacto globalmente,
-                  impulsando la evolución tecnológica y siendo un referente en
-                  el sector de la transformación digital.
-                </p>
+  Ser una empresa líder en desarrollo de software y soluciones digitales, destacada por innovación, calidad y compromiso con la satisfacción del cliente. Aspiramos a expandir nuestro impacto globalmente y ser un referente en transformación digital.
+</p>
+
               </div>
             </div>
           </div>
