@@ -118,54 +118,7 @@ export default function LucidChartBlog() {
           </a>
         </section>
         
-        <section className="w-full mb-8">
-          <h2 className="text-2xl font-bold text-brunswick-green mb-4 flex items-center">
-            <MessageSquare className="h-6 w-6 mr-2" />
-            Comentarios
-          </h2>
-          <div className="space-y-4">
-            <div className="border-b border-timberwolf/30 pb-4">
-              <div className="flex items-center mb-2">
-                <div className="bg-timberwolf/30 w-8 h-8 rounded-full mr-3 flex items-center justify-center">
-                  <User className="h-5 w-5 text-brunswick-green" />
-                </div>
-                <div>
-                  <p className="font-medium text-brunswick-green">Carlos Martinez</p>
-                  <p className="text-xs text-muted-foreground">18 de abril, 2025</p>
-                </div>
-              </div>
-              <p className="text-muted-foreground">
-                ¡Excelente artículo! He estado usando Lucid Chart para documentar los procesos de mi empresa y la verdad ha simplificado mucho nuestro trabajo.
-              </p>
-            </div>
-            <div className="border-b border-timberwolf/30 pb-4">
-              <div className="flex items-center mb-2">
-                <div className="bg-timberwolf/30 w-8 h-8 rounded-full mr-3 flex items-center justify-center">
-                  <User className="h-5 w-5 text-brunswick-green" />
-                </div>
-                <div>
-                  <p className="font-medium text-brunswick-green">Ana López</p>
-                  <p className="text-xs text-muted-foreground">19 de abril, 2025</p>
-                </div>
-              </div>
-              <p className="text-muted-foreground">
-                ¿Alguien sabe si hay planes para integrar más funciones de IA en la plataforma? Me encantaría poder generar diagramas a partir de descripciones textuales.
-              </p>
-            </div>
-          </div>
-          <div className="mt-6">
-            <h3 className="font-medium text-brunswick-green mb-2">Deja tu comentario</h3>
-            <textarea 
-              className="w-full p-3 border border-timberwolf/50 rounded-md" 
-              placeholder="Escribe tu comentario aquí..."
-              rows={4}
-            />
-            <button className="mt-2 bg-brunswick-green text-white px-4 py-2 rounded-md hover:bg-brunswick-green/90 transition-colors flex items-center">
-              <MessageSquare className="h-4 w-4 mr-2" />
-              Publicar comentario
-            </button>
-          </div>
-        </section>
+        
       </div>
       
       <div className="w-full md:w-1/3 flex flex-col gap-6 pt-8">
