@@ -1,8 +1,15 @@
-import Image from "next/image"
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
-import { ArrowRight, Calendar, Clock, User } from "lucide-react"
+import Image from "next/image";
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { ArrowRight, Calendar, Clock, User } from "lucide-react";
 
 export default function BlogPage() {
   const blogPosts = [
@@ -17,8 +24,20 @@ export default function BlogPage() {
       author: "Adrián Jurado",
       category: "Tecnología",
       slug: "lucidChart",
-    }
-  ]
+    },
+    {
+      id: 2,
+      title: "Drizzle ORM: ORM moderno para TypeScript",
+      excerpt:
+        "Drizzle ORM es una solución moderna y ligera para la gestión de bases de datos en aplicaciones TypeScript y JavaScript. Descubre cómo aprovechar su tipado estricto y migraciones automáticas.",
+      image: "./images/drizzle/drizzle-logo.png",
+      date: "27 de abril, 2025",
+      readTime: "5 min de lectura",
+      author: "Zhu Daniel",
+      category: "Tecnología",
+      slug: "drizzle",
+    },
+  ];
 
   return (
     <div className="flex flex-col">
@@ -30,7 +49,8 @@ export default function BlogPage() {
                 Nuestro Blog
               </h1>
               <p className="max-w-[900px] text-muted-foreground md:text-xl">
-                Descubra las últimas tendencias, consejos y mejores prácticas en tecnología y negocios.
+                Descubra las últimas tendencias, consejos y mejores prácticas en
+                tecnología y negocios.
               </p>
             </div>
           </div>
@@ -41,11 +61,14 @@ export default function BlogPage() {
         <div className="container px-4 md:px-6">
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {blogPosts.map((post) => (
-              <Card key={post.id} className="flex flex-col overflow-hidden border-sage/40 shadow-sm hover:shadow-md transition-shadow">
+              <Card
+                key={post.id}
+                className="flex flex-col overflow-hidden border-sage/40 shadow-sm hover:shadow-md transition-shadow"
+              >
                 <div className="relative aspect-video overflow-hidden">
                   <Image
                     src={`${post.image}`}
-                    width={400}
+                    width={435}
                     height={200}
                     alt={post.title}
                     className="object-cover transition-transform duration-300 hover:scale-105"
@@ -59,24 +82,35 @@ export default function BlogPage() {
                     <Calendar className="h-4 w-4" />
                     <span>{post.date}</span>
                   </div>
-                  <CardTitle className="line-clamp-2 mb-2">{post.title}</CardTitle>
-                  <CardDescription className="line-clamp-3">{post.excerpt}</CardDescription>
+                  <CardTitle className="line-clamp-2 mb-2">
+                    {post.title}
+                  </CardTitle>
+                  <CardDescription className="line-clamp-3">
+                    {post.excerpt}
+                  </CardDescription>
                 </CardHeader>
                 <CardContent className="pt-0">
                   <div className="flex items-center gap-4">
                     <div className="flex items-center gap-2">
                       <User className="h-4 w-4 text-muted-foreground" />
-                      <span className="text-sm text-muted-foreground">{post.author}</span>
+                      <span className="text-sm text-muted-foreground">
+                        {post.author}
+                      </span>
                     </div>
                     <div className="flex items-center gap-2">
                       <Clock className="h-4 w-4 text-muted-foreground" />
-                      <span className="text-sm text-muted-foreground">{post.readTime}</span>
+                      <span className="text-sm text-muted-foreground">
+                        {post.readTime}
+                      </span>
                     </div>
                   </div>
                 </CardContent>
                 <CardFooter className="pt-2">
                   <Link href={`/blog/${post.slug}`} className="w-full">
-                    <Button variant="outline" className="w-full border-fern-green text-fern-green hover:bg-timberwolf">
+                    <Button
+                      variant="outline"
+                      className="w-full border-fern-green text-fern-green hover:bg-timberwolf"
+                    >
                       Leer artículo
                       <ArrowRight className="ml-2 h-4 w-4" />
                     </Button>
@@ -96,7 +130,8 @@ export default function BlogPage() {
                 Suscríbase a nuestro boletín
               </h2>
               <p className="max-w-[900px] text-muted-foreground md:text-lg lg:text-base xl:text-lg">
-                Reciba las últimas noticias, artículos y recursos directamente en su bandeja de entrada.
+                Reciba las últimas noticias, artículos y recursos directamente
+                en su bandeja de entrada.
               </p>
             </div>
             <div className="mx-auto w-full max-w-md space-y-2 mt-4">
@@ -107,17 +142,21 @@ export default function BlogPage() {
                   type="email"
                   required
                 />
-                <Button type="submit" className="bg-hunter-green text-timberwolf hover:bg-hunter-green/90">
+                <Button
+                  type="submit"
+                  className="bg-hunter-green text-timberwolf hover:bg-hunter-green/90"
+                >
                   Suscribirse
                 </Button>
               </form>
               <p className="text-xs text-muted-foreground">
-                Respetamos su privacidad. Puede darse de baja en cualquier momento.
+                Respetamos su privacidad. Puede darse de baja en cualquier
+                momento.
               </p>
             </div>
           </div>
         </div>
       </section>
     </div>
-  )
+  );
 }
