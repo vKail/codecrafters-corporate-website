@@ -1,15 +1,11 @@
 import {
   Calendar,
   User,
-  Video,
-  Users,
   Columns,
   PenTool,
   BarChartHorizontal,
-  MessageSquare,
   Mail,
   Bookmark,
-  Tag,
   FileText,
 } from "lucide-react";
 import Image from "next/image";
@@ -64,7 +60,7 @@ export default function DrizzleBlog() {
             <div className="aspect-video relative w-full h-full">
               <iframe
                 className="absolute top-0 left-0 w-full h-full rounded-xl"
-                src="https://www.youtube.com/embed/zimyeA-eZUo"
+                src="https://www.youtube.com/embed/G5J_PMzcNss"
                 title="Video Tutorial de Drizzle ORM"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
