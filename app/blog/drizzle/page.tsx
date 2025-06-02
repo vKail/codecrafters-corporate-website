@@ -158,7 +158,6 @@ export default function DrizzleBlog() {
           </a>
         </section>
 
-        {/* Comentario: Aquí puedes implementar la sección de comentarios solo para este blog de Drizzle ORM */}
         <DrizzleComments />
       </div>
       <div className="w-full md:w-1/3 flex flex-col gap-6 pt-8">
@@ -204,7 +203,6 @@ export default function DrizzleBlog() {
                 </p>
               </div>
             </div>
-            {/* Puedes agregar más artículos relacionados aquí */}
           </div>
         </div>
         <div className="bg-hunter-green/10 p-4 rounded-lg">
